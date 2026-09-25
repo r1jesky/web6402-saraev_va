@@ -16,6 +16,7 @@
 > — Альбер Камю
  
 <p align="center">
-  <img width="1080" height="608" alt="image" src="https://github.com/user-attachments/assets/0042c946-74fa-4749-a47c-9a0a3dca25d4" />
+  <img width="1204" height="944" alt="image" src="https://github.com/user-attachments/assets/f899c10f-5153-47cf-b5fc-9b9d20cf378d" />
 </p>
  
+
