@@ -1,0 +1,246 @@
+/* =========================================================
+   «Досуг» — ЛР №2, Web-программирование
+   Сараев В.А., 6402-010302D
+
+   Используемые селекторы (по лекции «HTML и CSS»):
+   1. универсальный ............ *
+   2. тега ..................... body, h1, p, table
+   3. класса ................... .card, .intro, .center
+   4. по идентификатору (id) ... #top
+   5. атрибута ................. a[target="_blank"]
+   6. контекстный (потомков) ... nav a, .page-read h1
+   7. дочерних элементов ....... ul > li
+   8. сестринских элементов .... h1 + p
+   9. псевдокласса ............. a:hover
+  10. псевдоэлемента ........... .intro::first-letter
+   ========================================================= */
+
+
+/* ---------- Сброс базовых стилей ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- Страница ---------- */
+
+body {
+    background-color: #faf7f2;
+    color: #2b2b2b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0 0 10px 22px;
+}
+
+a {
+    color: #2b2b2b;
+}
+
+a:hover {
+    color: crimson;
+}
+
+/* внешние ссылки, открывающиеся в новой вкладке */
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+
+/* ---------- Шапка ---------- */
+
+#top {
+    background-color: white;
+    border-bottom: 1px solid #e0d9cf;
+    padding: 16px 10%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+nav a {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 12px;
+    margin-right: 4px;
+    border: 1px solid #e0d9cf;
+    background-color: #faf7f2;
+}
+
+nav a:hover {
+    color: black;
+    border-color: black;
+}
+
+/* текущая страница в меню */
+nav a.active {
+    color: white;
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+}
+
+
+/* ---------- Основная часть ---------- */
+
+main {
+    width: 80%;
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* абзац сразу после заголовка страницы */
+h1 + p {
+    font-size: 1.15rem;
+    color: dimgray;
+}
+
+/* первая буква вступления — крупнее */
+.intro::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.picture {
+    width: 110px;
+    height: 110px;
+    margin: 10px 0 20px;
+}
+
+/* карточка — блок с рамкой; на ней хорошо видна блочная модель */
+.card {
+    background-color: white;
+    border: 1px solid #e0d9cf;
+    border-left: 6px solid #2b2b2b;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.card h2 + p {
+    color: dimgray;
+}
+
+.meta {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.book {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 10px 14px;
+    margin-top: 12px;
+}
+
+/* списки плюсов */
+ul > li {
+    margin-bottom: 4px;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #e0d9cf;
+    margin: 30px 0;
+}
+
+
+/* ---------- Таблицы ---------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 10px 0 30px;
+}
+
+td {
+    border: 1px solid #e0d9cf;
+    padding: 10px 14px;
+}
+
+/* строка-заголовок таблицы */
+.head td {
+    background-color: #2b2b2b;
+    color: white;
+    font-weight: bold;
+}
+
+/* выравнивание в таблице: по левому краю, по центру, по правому краю */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.yes {
+    color: green;
+    font-weight: bold;
+}
+
+.no {
+    color: silver;
+}
+
+
+/* ---------- Подвал ---------- */
+
+footer {
+    background-color: white;
+    border-top: 1px solid #e0d9cf;
+    padding: 20px 10%;
+    color: gray;
+    font-size: 14px;
+}
+
+
+/* ---------- Цвет каждого раздела ---------- */
+
+.page-read h1, .page-read h2 { color: #8b5e3c; }
+.page-read .card             { border-left-color: #8b5e3c; }
+.page-read nav a.active      { background-color: #8b5e3c; border-color: #8b5e3c; }
+
+.page-sport h1, .page-sport h2 { color: #e8590c; }
+.page-sport .card              { border-left-color: #e8590c; }
+.page-sport nav a.active       { background-color: #e8590c; border-color: #e8590c; }
+
+.page-movies h1, .page-movies h2 { color: #c92a2a; }
+.page-movies .card               { border-left-color: #c92a2a; }
+.page-movies nav a.active        { background-color: #c92a2a; border-color: #c92a2a; }
+
+.page-games h1, .page-games h2 { color: rgb(103, 65, 217); }
+.page-games .card              { border-left-color: rgb(103, 65, 217); }
+.page-games nav a.active       { background-color: rgb(103, 65, 217); border-color: rgb(103, 65, 217); }
+
+.page-scroll h1, .page-scroll h2 { color: #d6336c; }
+.page-scroll .card               { border-left-color: #d6336c; }
+.page-scroll nav a.active        { background-color: #d6336c; border-color: #d6336c; }

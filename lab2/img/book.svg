@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><title>Стопка книг</title>
+<rect x="18" y="82" width="84" height="16" rx="3" fill="#8b5e3c"/><rect x="18" y="82" width="8" height="16" fill="#6d4429"/>
+<rect x="26" y="64" width="72" height="16" rx="3" fill="#e0a458"/><rect x="26" y="64" width="8" height="16" fill="#c0873d"/>
+<rect x="22" y="46" width="78" height="16" rx="3" fill="#3d6b5a"/><rect x="22" y="46" width="8" height="16" fill="#2c5142"/>
+<path d="M38 44 L60 14 L82 44 Z" fill="#ffc94d" opacity=".0"/>
+<rect x="40" y="22" width="44" height="22" rx="3" fill="#faf7f2" stroke="#2b2b2b" stroke-width="2"/><path d="M62 22 v22" stroke="#2b2b2b" stroke-width="2"/>
+<path d="M46 29h10M46 34h10M68 29h10M68 34h10" stroke="#9a9a9a" stroke-width="1.5"/></svg>

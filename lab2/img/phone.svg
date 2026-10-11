@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><title>Смартфон с короткими видео</title>
+<rect x="34" y="8" width="52" height="104" rx="10" fill="#2b2b2b"/>
+<rect x="39" y="18" width="42" height="84" rx="4" fill="#d6336c"/>
+<path d="M54 48 v20 l16 -10 z" fill="#faf7f2"/>
+<g fill="#faf7f2"><circle cx="75" cy="78" r="3"/><circle cx="75" cy="87" r="3"/><circle cx="75" cy="96" r="3"/></g>
+<path d="M44 92 h20 M44 97 h14" stroke="#faf7f2" stroke-width="2" opacity=".7"/>
