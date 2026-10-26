@@ -1,6 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120"><title>Смартфон с короткими видео</title>
-<rect x="34" y="8" width="52" height="104" rx="10" fill="#2b2b2b"/>
-<rect x="39" y="18" width="42" height="84" rx="4" fill="#d6336c"/>
-<path d="M54 48 v20 l16 -10 z" fill="#faf7f2"/>
-<g fill="#faf7f2"><circle cx="75" cy="78" r="3"/><circle cx="75" cy="87" r="3"/><circle cx="75" cy="96" r="3"/></g>
-<path d="M44 92 h20 M44 97 h14" stroke="#faf7f2" stroke-width="2" opacity=".7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <title>Смартфон с короткими видео</title>
+  <!-- корпус -->
+  <rect x="32" y="6" width="56" height="108" rx="11" fill="#2b2b2b"/>
+  <!-- экран -->
+  <rect x="37" y="15" width="46" height="90" rx="5" fill="#d6336c"/>
+  <!-- динамик -->
+  <rect x="52" y="9" width="16" height="2.5" rx="1.25" fill="#555555"/>
+  <!-- кнопка воспроизведения -->
+  <circle cx="58" cy="56" r="12" fill="#faf7f2" opacity="0.25"/>
+  <path d="M54 49 L54 63 L65 56 Z" fill="#faf7f2"/>
+  <!-- лайк, комментарий, репост справа -->
+  <path d="M77 70 c-1.6 -1.8 -4.4 -0.6 -4.4 1.6 c0 2.2 4.4 5 4.4 5 c0 0 4.4 -2.8 4.4 -5 c0 -2.2 -2.8 -3.4 -4.4 -1.6 z" fill="#faf7f2"/>
+  <circle cx="77" cy="83" r="2.6" fill="#faf7f2"/>
+  <circle cx="77" cy="92" r="2.6" fill="#faf7f2"/>
+  <!-- подпись к ролику -->
+  <rect x="41" y="88" width="24" height="3" rx="1.5" fill="#faf7f2" opacity="0.8"/>
+  <rect x="41" y="94" width="16" height="3" rx="1.5" fill="#faf7f2" opacity="0.6"/>
+  <!-- полоска прогресса видео -->
+  <rect x="37" y="101" width="46" height="2" fill="#faf7f2" opacity="0.3"/>
+  <rect x="37" y="101" width="30" height="2" fill="#faf7f2"/>
+  <!-- стрелка «листай дальше» -->
+  <path d="M100 66 L100 44 M93 51 L100 44 L107 51" stroke="#d6336c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
