@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>План на вечер — Досуг</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/plan.js" defer></script>
+</head>
+<body class="page-plan">
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Досуг<span aria-hidden="true">.</span></a>
+            <nav class="site-nav" aria-label="Разделы сайта">
+                <a class="site-nav__link" href="index.html">Чтение</a>
+                <a class="site-nav__link" href="sport.html">Спорт</a>
+                <a class="site-nav__link" href="movies.html">Кино</a>
+                <a class="site-nav__link" href="games.html">Игры</a>
+                <a class="site-nav__link" href="scroll.html">Разложение</a>
+                <a class="site-nav__link site-nav__link--plan site-nav__link--current" href="plan.html" aria-current="page">План на вечер</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <div class="page-hero page-hero--compact">
+            <div class="page-hero__copy">
+                <h1>План на вечер</h1>
+                <p class="page-hero__intro">Выберите занятие, укажите дату и отправьте план.</p>
+            </div>
+        </div>
+
+        <form class="plan-form" action="/plans" method="post">
+            <div class="plan-form__field">
+                <label for="nickname">Как к вам обращаться</label>
+                <input id="nickname" name="nickname" type="text" placeholder="Например, Саша"
+                       required maxlength="60" pattern=".*\S.*">
+            </div>
+
+            <div class="plan-form__field">
+                <label for="activity">Занятие</label>
+                <select id="activity" name="activity" required>
+                    <option value="">Выберите занятие</option>
+                    <option>Чтение</option>
+                    <option>Спорт</option>
+                    <option>Кино</option>
+                    <option>Игры</option>
+                    <option>Короткие видео</option>
+                </select>
+            </div>
+
+            <div class="plan-form__field">
+                <label for="date">Дата</label>
+                <input id="date" name="date" type="date" required>
+            </div>
+
+            <div class="plan-form__field">
+                <label for="note">Заметка <span class="plan-form__optional">(необязательно)</span></label>
+                <textarea id="note" name="note" rows="4" maxlength="500"
+                          placeholder="Книга, фильм или другая деталь плана"></textarea>
+            </div>
+
+            <button class="plan-form__submit" type="submit">Отправить план</button>
+            <p class="plan-form__status" role="status"></p>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">ЛР № 4 &middot; Сараев В. А., группа 6402-010302D</div>
+    </footer>
+</body>
+</html>

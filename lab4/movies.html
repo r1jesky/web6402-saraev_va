@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кино — Досуг</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-movies">
+
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Досуг<span aria-hidden="true">.</span></a>
+            <nav class="site-nav" aria-label="Разделы сайта">
+                <a class="site-nav__link" href="index.html">Чтение</a>
+                <a class="site-nav__link" href="sport.html">Спорт</a>
+                <a class="site-nav__link site-nav__link--current" href="movies.html" aria-current="page">Кино</a>
+                <a class="site-nav__link" href="games.html">Игры</a>
+                <a class="site-nav__link" href="scroll.html">Разложение</a>
+                <a class="site-nav__link site-nav__link--plan" href="plan.html">План на вечер</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <div class="page-hero">
+            <div class="page-hero__copy">
+                <h1>Кино</h1>
+                <p class="page-hero__intro">Шесть фильмов, которые я советую. Выбирайте не по жанру, а по настроению.</p>
+            </div>
+            <div class="page-hero__art">
+                <img class="page-hero__picture" src="img/film.svg" alt="Ведро попкорна" width="110" height="110">
+            </div>
+        </div>
+
+        <div class="comparison" role="region" aria-label="Сравнение фильмов" tabindex="0">
+            <table class="comparison__table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="comparison__cell--start">Фильм</th>
+                        <th scope="col" class="comparison__cell--start">Настроение</th>
+                        <th scope="col" class="comparison__cell--center">Год</th>
+                        <th scope="col" class="comparison__cell--end">Длительность</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="comparison__cell--start">Интерстеллар</td>
+                        <td class="comparison__cell--start">хочется масштаба</td>
+                        <td class="comparison__cell--center">2014</td>
+                        <td class="comparison__cell--end">2 ч 49 мин</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Остров проклятых</td>
+                        <td class="comparison__cell--start">хочется понервничать</td>
+                        <td class="comparison__cell--center">2010</td>
+                        <td class="comparison__cell--end">2 ч 18 мин</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Джентльмены</td>
+                        <td class="comparison__cell--start">хочется посмеяться</td>
+                        <td class="comparison__cell--center">2019</td>
+                        <td class="comparison__cell--end">1 ч 53 мин</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Унесённые призраками</td>
+                        <td class="comparison__cell--start">хочется уюта</td>
+                        <td class="comparison__cell--center">2001</td>
+                        <td class="comparison__cell--end">2 ч 05 мин</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Брат</td>
+                        <td class="comparison__cell--start">хочется нашего</td>
+                        <td class="comparison__cell--center">1997</td>
+                        <td class="comparison__cell--end">около 1 ч 40 мин</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Жизнь прекрасна</td>
+                        <td class="comparison__cell--start">хочется поплакать</td>
+                        <td class="comparison__cell--center">1997</td>
+                        <td class="comparison__cell--end">1 ч 56 мин</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cards cards--grid">
+            <section class="card">
+                <h2>Интерстеллар</h2>
+                <p class="card__meta">2014 &middot; режиссёр Кристофер Нолан</p>
+                <p>Земля умирает, и группа астронавтов летит через червоточину искать человечеству новый дом. Космос, время и отец, который обещал вернуться.</p>
+            </section>
+
+            <section class="card">
+                <h2>Остров проклятых</h2>
+                <p class="card__meta">2010 &middot; режиссёр Мартин Скорсезе</p>
+                <p>Маршал приезжает на остров с клиникой для душевнобольных преступников, чтобы найти пропавшую пациентку. Чем дальше, тем меньше понятно, кому верить.</p>
+            </section>
+
+            <section class="card">
+                <h2>Джентльмены</h2>
+                <p class="card__meta">2019 &middot; режиссёр Гай Ричи</p>
+                <p>Американец решает продать свой нелегальный бизнес в Лондоне &mdash; и за него начинает драться вся криминальная Англия. Быстро, дерзко, смешно.</p>
+            </section>
+
+            <section class="card">
+                <h2>Унесённые призраками</h2>
+                <p class="card__meta">2001 &middot; режиссёр Хаяо Миядзаки</p>
+                <p>Девочка попадает в мир духов и устраивается работать в волшебную баню, чтобы спасти родителей. Аниме, которое смотрят и дети, и взрослые.</p>
+            </section>
+
+            <section class="card">
+                <h2>Брат</h2>
+                <p class="card__meta">1997 &middot; режиссёр Алексей Балабанов</p>
+                <p>Данила Багров после армии едет в Петербург к старшему брату. Девяностые, &laquo;Наутилус&raquo; в плеере и простые ответы на сложные вопросы.</p>
+            </section>
+
+            <section class="card">
+                <h2>Жизнь прекрасна</h2>
+                <p class="card__meta">1997 &middot; режиссёр Роберто Бениньи</p>
+                <p>Отец оказывается с маленьким сыном в концлагере и убеждает его, что всё вокруг &mdash; большая игра. Смешной и очень грустный фильм одновременно.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">ЛР № 4 &middot; Сараев В. А., группа 6402-010302D</div>
+    </footer>
+
+</body>
+</html>

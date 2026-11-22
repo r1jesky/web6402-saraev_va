@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Спорт — Досуг</title>
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-sport">
+
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-header__logo" href="index.html">Досуг<span aria-hidden="true">.</span></a>
+            <nav class="site-nav" aria-label="Разделы сайта">
+                <a class="site-nav__link" href="index.html">Чтение</a>
+                <a class="site-nav__link site-nav__link--current" href="sport.html" aria-current="page">Спорт</a>
+                <a class="site-nav__link" href="movies.html">Кино</a>
+                <a class="site-nav__link" href="games.html">Игры</a>
+                <a class="site-nav__link" href="scroll.html">Разложение</a>
+                <a class="site-nav__link site-nav__link--plan" href="plan.html">План на вечер</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <div class="page-hero">
+            <div class="page-hero__copy">
+                <h1>Спорт</h1>
+                <p class="page-hero__intro">Хочется подвигаться? Вот пять форматов &mdash; выбирайте тот, что подходит под настроение.</p>
+            </div>
+            <div class="page-hero__art">
+                <img class="page-hero__picture" src="img/ball.svg" alt="Мяч" width="110" height="110">
+            </div>
+        </div>
+
+        <section class="card">
+            <h2>Тренажёрный зал</h2>
+            <p>Для тех, кто любит план и видеть результат в цифрах.</p>
+            <ul>
+                <li>Развивает силу и мышечную массу</li>
+                <li>Можно проработать любую группу мышц</li>
+                <li>Прогресс легко отслеживать по весам и повторениям</li>
+                <li>Не зависит от погоды и от того, свободны ли друзья</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Волейбол</h2>
+            <p>Спорт, который заодно встреча с друзьями.</p>
+            <ul>
+                <li>Командная игра &mdash; общение и командный дух</li>
+                <li>Тренирует реакцию и координацию</li>
+                <li>Прыжки <del>укрепляют</del> расстраивают ноги</li>
+                <li>Играть на любительском уровне можно почти сразу</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Бассейн</h2>
+            <p>Нагрузка на всё тело &mdash; без вреда для суставов.</p>
+            <ul>
+                <li>Работают почти все группы мышц</li>
+                <li>Минимальная нагрузка на суставы и позвоночник</li>
+                <li>Тренирует дыхание и выносливость</li>
+                <li>Хорошо расслабляет</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Покидать мяч в кольцо</h2>
+            <p>Можно одному и бесплатно &mdash; кольцо есть почти в каждом дворе.</p>
+            <ul>
+                <li>Нужен только мяч, никаких абонементов</li>
+                <li>Тренирует точность и координацию</li>
+                <li>Броски успокаивают не хуже медитации</li>
+                <li>Подтянутся люди &mdash; сыграете 3 на 3, как пел Скриптонит</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Бег</h2>
+            <p>Самый простой старт: вышли из подъезда &mdash; уже тренировка.</p>
+            <ul>
+                <li>Нужно только заставить себя</li>
+                <li>Развивает выносливость и тренирует сердце</li>
+                <li>Хорошо снимает стресс</li>
+                <li>Можно слушать музыку или подкасты</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <h2>Сравнение</h2>
+        <div class="comparison" role="region" aria-label="Сравнение спортивных занятий" tabindex="0">
+            <table class="comparison__table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="comparison__cell--start">Формат</th>
+                        <th scope="col" class="comparison__cell--center">В компании</th>
+                        <th scope="col" class="comparison__cell--center">Зависит от погоды</th>
+                        <th scope="col" class="comparison__cell--end">Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="comparison__cell--start">Тренажёрный зал</td>
+                        <td class="comparison__cell--center comparison__cell--no">не обязательно</td>
+                        <td class="comparison__cell--center comparison__cell--no">нет</td>
+                        <td class="comparison__cell--end">абонемент (можно найти за 6к в год)</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Волейбол</td>
+                        <td class="comparison__cell--center comparison__cell--yes">да</td>
+                        <td class="comparison__cell--center">только уличный</td>
+                        <td class="comparison__cell--end">зависит от места</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Бассейн</td>
+                        <td class="comparison__cell--center comparison__cell--no">нет</td>
+                        <td class="comparison__cell--center comparison__cell--no">нет</td>
+                        <td class="comparison__cell--end">абонемент</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Покидать мяч в кольцо</td>
+                        <td class="comparison__cell--center comparison__cell--no">не обязательно</td>
+                        <td class="comparison__cell--center comparison__cell--yes">да</td>
+                        <td class="comparison__cell--end">бесплатно</td>
+                    </tr>
+                    <tr>
+                        <td class="comparison__cell--start">Бег</td>
+                        <td class="comparison__cell--center comparison__cell--no">нет</td>
+                        <td class="comparison__cell--center comparison__cell--yes">да</td>
+                        <td class="comparison__cell--end">бесплатно</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">ЛР № 4 &middot; Сараев В. А., группа 6402-010302D</div>
+    </footer>
+
+</body>
+</html>
